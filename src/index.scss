@@ -34,6 +34,16 @@ html, body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-image: url("./assets/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--paleBlue);
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    background-image: url("./assets/pattern-background-desktop.svg");
+  }
 }
 
 img, picture, video, canvas, svg {

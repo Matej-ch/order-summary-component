@@ -1,13 +1,96 @@
 .summary-container {
-  .background {
 
+  background-color: white;
+  z-index: 10;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+
+  .background {
+    background-image: url("./assets/illustration-hero.svg");
+    background-color: var(--brightBlue);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 140px;
+    padding: 1rem;
+    position: relative;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .info-container {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--darkBlue);
+    font-weight: 900;
+  }
+
+  p {
+    font-size: var(--paragraphFontSize);
+    color: var(--desaturatedBlue);
+    margin-bottom: 1.5rem;
   }
 
   .proceed {
+    border: none;
+    background-color: var(--brightBlue);
+    color: white;
+    padding: 0.75rem 2rem;
+    width: 100%;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    cursor: pointer;
 
+    &:hover {
+      opacity: 0.75;
+    }
   }
 
   .cancel {
+    border: none;
+    color: var(--desaturatedBlue);
+    background-color: transparent;
+    font-weight: 900;
+    cursor: pointer;
 
+    &:hover {
+      color: var(--darkBlue);
+    }
   }
+
+  .plan {
+    background-color: var(--veryPaleBlue);
+    display: flex;
+    margin-bottom: 1.5rem;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    align-items: center;
+
+    .plan-type {
+      font-weight: 900;
+    }
+
+    .plan-price {
+      color: var(--desaturatedBlue);
+    }
+
+    a {
+      color: var(--darkBlue);
+
+      &:hover {
+        color: var(--brightBlue);
+        text-decoration: none;
+      }
+    }
+  }
+
+  //500 700 900
 }
